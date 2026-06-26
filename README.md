@@ -122,12 +122,3 @@ flashSequence()- (Ejemplo de función auxiliar)
 | Ave no se mueve | Comprueba potenciómetro en A0 |
 | No se reinicia el juego | Verifica botón en pin 2 |
 | Imagen distorsionada | Reinicia Arduino (botón RESET) |
-
-## Autor
-
-Laura Daheq
-
----
-
-**Proyecto creado:** 2026  
-**Tecnología:** Arduino UNO + OLED SSD1306
