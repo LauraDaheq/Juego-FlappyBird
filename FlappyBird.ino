@@ -17,7 +17,7 @@ const unsigned char myBitmap6[] PROGMEM = {               //Imagen ave pequeña
   0x1f, 0x0f, 0xf0, 0x0f, 0x07, 0xe0, 0x03, 0xff, 0xc0
 };
 
-// 'logo_Dynamo_64x64', 61x58px
+// 'logo_64x64', 61x58px
 const unsigned char myBitmap7[] PROGMEM = {              //Imagen logo 
   0x00, 0x00, 0x03, 0xf8, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x0f, 0xff, 0x00, 0x00, 0x00, 0x00,
   0x00, 0x00, 0x3c, 0x07, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x70, 0x01, 0xc0, 0x00, 0x00, 0x00,
@@ -148,7 +148,7 @@ void loop() {
 
 }
 
-void dibujoLogo(){                    //Dibujamos el logo de Dynamo Electronics SAS
+void dibujoLogo(){                    //Dibujamos el logo
   display.drawBitmap(33, 6, myBitmap7, 61, 58, WHITE); // Se dibuja a partir de las coordenadas x=33 y=6
   display.display();                  //Enviamos la orden a la OLED
   
@@ -197,7 +197,7 @@ void conteo() {                          //Rutina conteo
 
     display.setTextSize(1);      // Definimos tamaño 1 para los caracteres
     display.setCursor(10, 55);     // Definimos los puntos desde donde se empieza a escribir
-    display.write("dynamo electronics");  //Escribimos el mensaje dynamo electronics
+    display.write("score");       //Escribimos el mensaje score
     display.display();                    //Enviamos la orden a la OLED
 
     display.setTextSize(1);      // Definimos tamaño 1 para los caracteres
